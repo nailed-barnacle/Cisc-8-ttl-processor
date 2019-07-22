@@ -1,0 +1,1030 @@
+EESchema Schematic File Version 4
+LIBS:cisc-8-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 21
+Title "Opcode selector"
+Date "2019-04-13"
+Rev "1"
+Comp "DNB Projects"
+Comment1 "Decodes latched instruction to a single signal"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L cisc-8-rescue:74HC238-74xx_IEEE U1204
+U 1 1 5CC23F52
+P 1950 1200
+F 0 "U1204" H 1950 1716 50  0000 C CNN
+F 1 "74HC238" H 1950 1625 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1950 1200 50  0001 C CNN
+F 3 "" H 1950 1200 50  0001 C CNN
+	1    1950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:74HC238-74xx_IEEE U1205
+U 1 1 5CC2404E
+P 1950 2450
+F 0 "U1205" H 1950 2966 50  0000 C CNN
+F 1 "74HC238" H 1950 2875 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1950 2450 50  0001 C CNN
+F 3 "" H 1950 2450 50  0001 C CNN
+	1    1950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:74HC238-74xx_IEEE U1206
+U 1 1 5CC24084
+P 1950 3650
+F 0 "U1206" H 1950 4166 50  0000 C CNN
+F 1 "74HC238" H 1950 4075 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1950 3650 50  0001 C CNN
+F 3 "" H 1950 3650 50  0001 C CNN
+	1    1950 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 1000 0    50   Input ~ 0
+Int
+Wire Wire Line
+	1400 1000 1300 1000
+Wire Wire Line
+	1400 1150 1300 1150
+Wire Wire Line
+	1300 1150 1300 1000
+Connection ~ 1300 1000
+Wire Wire Line
+	1300 1000 1050 1000
+Wire Wire Line
+	1300 2250 1300 1150
+Connection ~ 1300 1150
+Wire Wire Line
+	1300 2250 1400 2250
+Wire Wire Line
+	1400 2400 1300 2400
+Wire Wire Line
+	1300 2400 1300 2250
+Connection ~ 1300 2250
+Wire Wire Line
+	1400 3450 1300 3450
+Wire Wire Line
+	1300 3450 1300 2400
+Connection ~ 1300 2400
+Wire Wire Line
+	1400 3600 1300 3600
+Wire Wire Line
+	1300 3600 1300 3450
+Connection ~ 1300 3450
+$Comp
+L cisc-8-rescue:VCC-power #PWR01203
+U 1 1 5CC24274
+P 1250 850
+F 0 "#PWR01203" H 1250 700 50  0001 C CNN
+F 1 "VCC" H 1267 1023 50  0000 C CNN
+F 2 "" H 1250 850 50  0001 C CNN
+F 3 "" H 1250 850 50  0001 C CNN
+	1    1250 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1300 1250 1300
+Wire Wire Line
+	1250 1300 1250 850 
+Wire Wire Line
+	1400 2550 1250 2550
+Wire Wire Line
+	1250 2550 1250 1300
+Connection ~ 1250 1300
+Wire Wire Line
+	1400 3750 1250 3750
+Wire Wire Line
+	1250 3750 1250 2550
+Connection ~ 1250 2550
+Text GLabel 1150 1550 0    50   Input ~ 0
+InstReg0
+Text GLabel 1150 1650 0    50   Input ~ 0
+InstReg1
+Text GLabel 1150 1750 0    50   Input ~ 0
+InstReg2
+Text GLabel 1150 2800 0    50   Input ~ 0
+InstReg3
+Text GLabel 1150 2900 0    50   Input ~ 0
+InstReg4
+Text GLabel 1150 3000 0    50   Input ~ 0
+InstReg5
+Text GLabel 1150 4000 0    50   Input ~ 0
+InstReg6
+Text GLabel 1150 4100 0    50   Input ~ 0
+InstReg7
+Wire Wire Line
+	1400 1550 1150 1550
+Wire Wire Line
+	1400 1650 1150 1650
+Wire Wire Line
+	1400 1750 1150 1750
+Wire Wire Line
+	1150 2800 1350 2800
+Wire Wire Line
+	1400 2900 1150 2900
+Wire Wire Line
+	1400 3000 1150 3000
+Wire Wire Line
+	1150 4000 1400 4000
+Wire Wire Line
+	1400 4100 1150 4100
+Wire Wire Line
+	1400 4200 1300 4200
+Wire Wire Line
+	1300 4200 1300 3600
+Connection ~ 1300 3600
+Text GLabel 1150 4350 0    50   Input ~ 0
+Condition
+$Comp
+L cisc-8-rescue:74LS11-74xx U1201
+U 1 1 5CC2BFB5
+P 4100 5400
+F 0 "U1201" H 3950 5600 50  0000 L CNN
+F 1 "74HC11" H 3950 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4100 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 4100 5400 50  0001 C CNN
+	1    4100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1201
+U 2 1 5CC2C0AB
+P 4600 5400
+F 0 "U1201" H 4450 5600 50  0000 L CNN
+F 1 "74HC11" H 4450 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4600 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 4600 5400 50  0001 C CNN
+	2    4600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1201
+U 3 1 5CC2C1A1
+P 5100 5400
+F 0 "U1201" H 4950 5600 50  0000 L CNN
+F 1 "74HC11" H 4950 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5100 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 5100 5400 50  0001 C CNN
+	3    5100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1201
+U 4 1 5CC2C2C9
+P 850 7000
+F 0 "U1201" H 900 6600 50  0000 L CNN
+F 1 "74HC11" H 900 7350 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 850 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 850 7000 50  0001 C CNN
+	4    850  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1202
+U 1 1 5CC2C447
+P 5600 5400
+F 0 "U1202" H 5450 5600 50  0000 L CNN
+F 1 "74HC11" H 5450 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5600 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 5600 5400 50  0001 C CNN
+	1    5600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1202
+U 2 1 5CC2C44E
+P 6100 5400
+F 0 "U1202" H 5950 5600 50  0000 L CNN
+F 1 "74HC11" H 5950 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6100 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 6100 5400 50  0001 C CNN
+	2    6100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1202
+U 3 1 5CC2C455
+P 7100 5400
+F 0 "U1202" H 6950 5600 50  0000 L CNN
+F 1 "74HC11" H 6950 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7100 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 7100 5400 50  0001 C CNN
+	3    7100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1203
+U 1 1 5CC2C8F0
+P 7600 5400
+F 0 "U1203" H 7450 5600 50  0000 L CNN
+F 1 "74HC11" H 7450 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7600 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 7600 5400 50  0001 C CNN
+	1    7600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1203
+U 2 1 5CC2C8F7
+P 8100 5400
+F 0 "U1203" H 7950 5600 50  0000 L CNN
+F 1 "74HC11" H 7950 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8100 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 8100 5400 50  0001 C CNN
+	2    8100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1203
+U 3 1 5CC2C8FE
+P 8600 5400
+F 0 "U1203" H 8450 5600 50  0000 L CNN
+F 1 "74HC11" H 8450 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8600 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 8600 5400 50  0001 C CNN
+	3    8600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1207
+U 1 1 5CC2CDB1
+P 9100 5400
+F 0 "U1207" H 8950 5600 50  0000 L CNN
+F 1 "74HC11" H 8950 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9100 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 9100 5400 50  0001 C CNN
+	1    9100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1207
+U 2 1 5CC2CDB8
+P 9600 5400
+F 0 "U1207" H 9450 5600 50  0000 L CNN
+F 1 "74HC11" H 9450 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9600 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 9600 5400 50  0001 C CNN
+	2    9600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1207
+U 3 1 5CC2CDBF
+P 10100 5400
+F 0 "U1207" H 9950 5600 50  0000 L CNN
+F 1 "74HC11" H 9950 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 10100 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 10100 5400 50  0001 C CNN
+	3    10100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1202
+U 4 1 5CC2D1F5
+P 1350 7000
+F 0 "U1202" H 1400 6600 50  0000 L CNN
+F 1 "74HC11" H 1400 7350 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1350 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 1350 7000 50  0001 C CNN
+	4    1350 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1203
+U 4 1 5CC2D610
+P 1850 7000
+F 0 "U1203" H 1900 6600 50  0000 L CNN
+F 1 "74HC11" H 1900 7350 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1850 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 1850 7000 50  0001 C CNN
+	4    1850 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:74LS11-74xx U1207
+U 4 1 5CC2DA2F
+P 2350 7000
+F 0 "U1207" H 2400 6600 50  0000 L CNN
+F 1 "74HC11" H 2400 7350 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2350 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 2350 7000 50  0001 C CNN
+	4    2350 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 5850 3    50   Input ~ 0
+Mov
+Text GLabel 3150 5850 3    50   Input ~ 0
+Maths
+Text GLabel 3600 5850 3    50   Input ~ 0
+Mlimm
+Text GLabel 4100 5850 3    50   Input ~ 0
+Mov16
+Text GLabel 4600 5850 3    50   Input ~ 0
+Dad
+Text GLabel 5100 5850 3    50   Input ~ 0
+Lxi
+Text GLabel 5600 5850 3    50   Input ~ 0
+Lda
+Text GLabel 6600 5850 3    50   Input ~ 0
+Lri
+Text GLabel 7100 5850 3    50   Input ~ 0
+Push
+Text GLabel 7600 5850 3    50   Input ~ 0
+Pop
+Text GLabel 8100 5850 3    50   Input ~ 0
+Jmp
+Text GLabel 8600 5850 3    50   Input ~ 0
+Jc
+Text GLabel 9100 5850 3    50   Input ~ 0
+Jnc
+Text GLabel 9600 5850 3    50   Input ~ 0
+Call
+Text GLabel 6100 5850 3    50   Input ~ 0
+Sta
+Text GLabel 10100 5850 3    50   Input ~ 0
+Ret
+Wire Wire Line
+	2500 3550 2750 3550
+Wire Wire Line
+	2750 3550 2750 5850
+Wire Wire Line
+	2500 3650 3150 3650
+Wire Wire Line
+	3150 3650 3150 5850
+Wire Wire Line
+	2500 3750 3500 3750
+Wire Wire Line
+	4000 3750 4000 5100
+Wire Wire Line
+	4000 3750 7000 3750
+Wire Wire Line
+	7000 3750 7000 5100
+Connection ~ 4000 3750
+Wire Wire Line
+	7000 3750 7500 3750
+Wire Wire Line
+	7500 3750 7500 5100
+Connection ~ 7000 3750
+Wire Wire Line
+	7500 3750 8000 3750
+Wire Wire Line
+	8000 3750 8000 5100
+Connection ~ 7500 3750
+Wire Wire Line
+	8000 3750 8500 3750
+Wire Wire Line
+	8500 3750 8500 5100
+Connection ~ 8000 3750
+Wire Wire Line
+	8500 3750 9000 3750
+Wire Wire Line
+	9000 3750 9000 5100
+Connection ~ 8500 3750
+Wire Wire Line
+	9000 3750 9500 3750
+Wire Wire Line
+	9500 3750 9500 5100
+Connection ~ 9000 3750
+Wire Wire Line
+	9500 3750 10000 3750
+Wire Wire Line
+	10000 3750 10000 5100
+Connection ~ 9500 3750
+Wire Wire Line
+	10100 5700 10100 5850
+Wire Wire Line
+	9600 5850 9600 5700
+Wire Wire Line
+	9100 5700 9100 5850
+Wire Wire Line
+	8600 5850 8600 5700
+Wire Wire Line
+	8100 5700 8100 5850
+Wire Wire Line
+	7600 5850 7600 5700
+Wire Wire Line
+	7100 5850 7100 5700
+Wire Wire Line
+	6100 5850 6100 5700
+Wire Wire Line
+	5600 5850 5600 5700
+Wire Wire Line
+	5100 5850 5100 5700
+Wire Wire Line
+	4600 5850 4600 5700
+Wire Wire Line
+	4100 5850 4100 5700
+Wire Wire Line
+	1750 4550 1550 4550
+Wire Wire Line
+	9200 4550 9200 5100
+Wire Wire Line
+	2500 3450 4500 3450
+Wire Wire Line
+	4500 3450 4500 5100
+Wire Wire Line
+	4500 3450 5000 3450
+Wire Wire Line
+	5000 3450 5000 5100
+Connection ~ 4500 3450
+Wire Wire Line
+	5000 3450 5500 3450
+Wire Wire Line
+	5500 3450 5500 5100
+Connection ~ 5000 3450
+Wire Wire Line
+	5500 3450 6000 3450
+Wire Wire Line
+	6000 3450 6000 5100
+Connection ~ 5500 3450
+Wire Wire Line
+	6000 3450 6500 3450
+Connection ~ 6000 3450
+Wire Wire Line
+	2500 2950 4100 2950
+Wire Wire Line
+	4100 2950 4100 5100
+Wire Wire Line
+	4100 2950 5600 2950
+Wire Wire Line
+	5600 2950 5600 5100
+Connection ~ 4100 2950
+Wire Wire Line
+	2500 2850 6100 2850
+Wire Wire Line
+	6100 2850 6100 5100
+Wire Wire Line
+	10100 2350 10100 5100
+Wire Wire Line
+	9600 5100 9600 2350
+Wire Wire Line
+	2500 2350 9600 2350
+Connection ~ 9600 2350
+Wire Wire Line
+	9600 2350 10100 2350
+Wire Wire Line
+	6700 1600 6700 5100
+Wire Wire Line
+	3700 5100 3700 1600
+Wire Wire Line
+	2500 1600 3700 1600
+Connection ~ 3700 1600
+Wire Wire Line
+	3700 1600 6700 1600
+Wire Wire Line
+	7200 5100 7200 1500
+Wire Wire Line
+	7200 1500 2500 1500
+Wire Wire Line
+	9700 5100 9700 1500
+Wire Wire Line
+	9700 1500 7200 1500
+Connection ~ 7200 1500
+Wire Wire Line
+	8200 5100 8200 1300
+Wire Wire Line
+	8200 1300 2500 1300
+Wire Wire Line
+	9100 5100 9100 1200
+Wire Wire Line
+	9100 1200 8600 1200
+Wire Wire Line
+	8600 5100 8600 1200
+Connection ~ 8600 1200
+Wire Wire Line
+	8600 1200 6200 1200
+Wire Wire Line
+	6200 5100 6200 1200
+Connection ~ 6200 1200
+Wire Wire Line
+	6200 1200 5700 1200
+Wire Wire Line
+	5700 5100 5700 1200
+Connection ~ 5700 1200
+Wire Wire Line
+	5700 1200 2500 1200
+Wire Wire Line
+	10200 5100 10200 1100
+Wire Wire Line
+	10200 1100 7700 1100
+Wire Wire Line
+	7700 5100 7700 1100
+Connection ~ 7700 1100
+Wire Wire Line
+	7700 1100 5200 1100
+Wire Wire Line
+	5200 5100 5200 1100
+Connection ~ 5200 1100
+Wire Wire Line
+	5200 1100 4700 1100
+Wire Wire Line
+	4700 5100 4700 1100
+Connection ~ 4700 1100
+Wire Wire Line
+	4700 1100 4200 1100
+Wire Wire Line
+	4200 5100 4200 1100
+Connection ~ 4200 1100
+Wire Wire Line
+	4200 1100 2500 1100
+Wire Wire Line
+	1350 2800 1350 4750
+Wire Wire Line
+	1350 4950 1750 4950
+Connection ~ 1350 2800
+Wire Wire Line
+	1350 2800 1400 2800
+Wire Wire Line
+	4600 5100 4600 4750
+Wire Wire Line
+	4600 4750 1350 4750
+Connection ~ 1350 4750
+Wire Wire Line
+	1350 4750 1350 4950
+Wire Wire Line
+	2350 4550 9200 4550
+Wire Wire Line
+	8100 5100 8100 4950
+Wire Wire Line
+	8100 4950 7600 4950
+Wire Wire Line
+	7600 5100 7600 4950
+Connection ~ 7600 4950
+Wire Wire Line
+	7600 4950 7100 4950
+Wire Wire Line
+	7100 5100 7100 4950
+Connection ~ 7100 4950
+Wire Wire Line
+	7100 4950 5100 4950
+Wire Wire Line
+	5100 5100 5100 4950
+Connection ~ 5100 4950
+$Comp
+L cisc-8-rescue:VCC-power #PWR01201
+U 1 1 5CCC9DF0
+P 850 6500
+F 0 "#PWR01201" H 850 6350 50  0001 C CNN
+F 1 "VCC" H 867 6673 50  0000 C CNN
+F 2 "" H 850 6500 50  0001 C CNN
+F 3 "" H 850 6500 50  0001 C CNN
+	1    850  6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR01204
+U 1 1 5CCC9E57
+P 1350 6500
+F 0 "#PWR01204" H 1350 6350 50  0001 C CNN
+F 1 "VCC" H 1367 6673 50  0000 C CNN
+F 2 "" H 1350 6500 50  0001 C CNN
+F 3 "" H 1350 6500 50  0001 C CNN
+	1    1350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR01206
+U 1 1 5CCC9EBE
+P 1850 6500
+F 0 "#PWR01206" H 1850 6350 50  0001 C CNN
+F 1 "VCC" H 1867 6673 50  0000 C CNN
+F 2 "" H 1850 6500 50  0001 C CNN
+F 3 "" H 1850 6500 50  0001 C CNN
+	1    1850 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR01208
+U 1 1 5CCC9F3C
+P 2350 6500
+F 0 "#PWR01208" H 2350 6350 50  0001 C CNN
+F 1 "VCC" H 2367 6673 50  0000 C CNN
+F 2 "" H 2350 6500 50  0001 C CNN
+F 3 "" H 2350 6500 50  0001 C CNN
+	1    2350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR01209
+U 1 1 5CCC9FAA
+P 2350 7500
+F 0 "#PWR01209" H 2350 7250 50  0001 C CNN
+F 1 "GND" H 2355 7327 50  0000 C CNN
+F 2 "" H 2350 7500 50  0001 C CNN
+F 3 "" H 2350 7500 50  0001 C CNN
+	1    2350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR01207
+U 1 1 5CCCA011
+P 1850 7500
+F 0 "#PWR01207" H 1850 7250 50  0001 C CNN
+F 1 "GND" H 1855 7327 50  0000 C CNN
+F 2 "" H 1850 7500 50  0001 C CNN
+F 3 "" H 1850 7500 50  0001 C CNN
+	1    1850 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR01205
+U 1 1 5CCCA078
+P 1350 7500
+F 0 "#PWR01205" H 1350 7250 50  0001 C CNN
+F 1 "GND" H 1355 7327 50  0000 C CNN
+F 2 "" H 1350 7500 50  0001 C CNN
+F 3 "" H 1350 7500 50  0001 C CNN
+	1    1350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR01202
+U 1 1 5CCCA0DF
+P 850 7500
+F 0 "#PWR01202" H 850 7250 50  0001 C CNN
+F 1 "GND" H 855 7327 50  0000 C CNN
+F 2 "" H 850 7500 50  0001 C CNN
+F 3 "" H 850 7500 50  0001 C CNN
+	1    850  7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:C-Device C?
+U 1 1 5CCE27DA
+P 3000 7050
+AR Path="/5CCE27DA" Ref="C?"  Part="1" 
+AR Path="/5C743CDA/5CCE27DA" Ref="C?"  Part="1" 
+AR Path="/5CC23EA1/5CCE27DA" Ref="C1201"  Part="1" 
+F 0 "C1201" H 3115 7096 50  0000 L CNN
+F 1 "100n" H 3115 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 6900 50  0001 C CNN
+F 3 "~" H 3000 7050 50  0001 C CNN
+	1    3000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR?
+U 1 1 5CCE27E1
+P 3000 6900
+AR Path="/5CCE27E1" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE27E1" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE27E1" Ref="#PWR01210"  Part="1" 
+F 0 "#PWR01210" H 3000 6750 50  0001 C CNN
+F 1 "VCC" H 3017 7073 50  0000 C CNN
+F 2 "" H 3000 6900 50  0001 C CNN
+F 3 "" H 3000 6900 50  0001 C CNN
+	1    3000 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR?
+U 1 1 5CCE27E7
+P 3000 7200
+AR Path="/5CCE27E7" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE27E7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE27E7" Ref="#PWR01211"  Part="1" 
+F 0 "#PWR01211" H 3000 6950 50  0001 C CNN
+F 1 "GND" H 3005 7027 50  0000 C CNN
+F 2 "" H 3000 7200 50  0001 C CNN
+F 3 "" H 3000 7200 50  0001 C CNN
+	1    3000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:C-Device C?
+U 1 1 5CCE27ED
+P 3450 7050
+AR Path="/5CCE27ED" Ref="C?"  Part="1" 
+AR Path="/5C743CDA/5CCE27ED" Ref="C?"  Part="1" 
+AR Path="/5CC23EA1/5CCE27ED" Ref="C1202"  Part="1" 
+F 0 "C1202" H 3565 7096 50  0000 L CNN
+F 1 "100n" H 3565 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3488 6900 50  0001 C CNN
+F 3 "~" H 3450 7050 50  0001 C CNN
+	1    3450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR?
+U 1 1 5CCE27F4
+P 3450 6900
+AR Path="/5CCE27F4" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE27F4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE27F4" Ref="#PWR01212"  Part="1" 
+F 0 "#PWR01212" H 3450 6750 50  0001 C CNN
+F 1 "VCC" H 3467 7073 50  0000 C CNN
+F 2 "" H 3450 6900 50  0001 C CNN
+F 3 "" H 3450 6900 50  0001 C CNN
+	1    3450 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR?
+U 1 1 5CCE27FA
+P 3450 7200
+AR Path="/5CCE27FA" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE27FA" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE27FA" Ref="#PWR01213"  Part="1" 
+F 0 "#PWR01213" H 3450 6950 50  0001 C CNN
+F 1 "GND" H 3455 7027 50  0000 C CNN
+F 2 "" H 3450 7200 50  0001 C CNN
+F 3 "" H 3450 7200 50  0001 C CNN
+	1    3450 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:C-Device C?
+U 1 1 5CCE2800
+P 3900 7050
+AR Path="/5CCE2800" Ref="C?"  Part="1" 
+AR Path="/5C743CDA/5CCE2800" Ref="C?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2800" Ref="C1203"  Part="1" 
+F 0 "C1203" H 4015 7096 50  0000 L CNN
+F 1 "100n" H 4015 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 6900 50  0001 C CNN
+F 3 "~" H 3900 7050 50  0001 C CNN
+	1    3900 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR?
+U 1 1 5CCE2807
+P 3900 6900
+AR Path="/5CCE2807" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE2807" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2807" Ref="#PWR01214"  Part="1" 
+F 0 "#PWR01214" H 3900 6750 50  0001 C CNN
+F 1 "VCC" H 3917 7073 50  0000 C CNN
+F 2 "" H 3900 6900 50  0001 C CNN
+F 3 "" H 3900 6900 50  0001 C CNN
+	1    3900 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR?
+U 1 1 5CCE280D
+P 3900 7200
+AR Path="/5CCE280D" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE280D" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE280D" Ref="#PWR01215"  Part="1" 
+F 0 "#PWR01215" H 3900 6950 50  0001 C CNN
+F 1 "GND" H 3905 7027 50  0000 C CNN
+F 2 "" H 3900 7200 50  0001 C CNN
+F 3 "" H 3900 7200 50  0001 C CNN
+	1    3900 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:C-Device C?
+U 1 1 5CCE2813
+P 4350 7050
+AR Path="/5CCE2813" Ref="C?"  Part="1" 
+AR Path="/5C743CDA/5CCE2813" Ref="C?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2813" Ref="C1204"  Part="1" 
+F 0 "C1204" H 4465 7096 50  0000 L CNN
+F 1 "100n" H 4465 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 6900 50  0001 C CNN
+F 3 "~" H 4350 7050 50  0001 C CNN
+	1    4350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR?
+U 1 1 5CCE281A
+P 4350 6900
+AR Path="/5CCE281A" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE281A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE281A" Ref="#PWR01216"  Part="1" 
+F 0 "#PWR01216" H 4350 6750 50  0001 C CNN
+F 1 "VCC" H 4367 7073 50  0000 C CNN
+F 2 "" H 4350 6900 50  0001 C CNN
+F 3 "" H 4350 6900 50  0001 C CNN
+	1    4350 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR?
+U 1 1 5CCE2820
+P 4350 7200
+AR Path="/5CCE2820" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE2820" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2820" Ref="#PWR01217"  Part="1" 
+F 0 "#PWR01217" H 4350 6950 50  0001 C CNN
+F 1 "GND" H 4355 7027 50  0000 C CNN
+F 2 "" H 4350 7200 50  0001 C CNN
+F 3 "" H 4350 7200 50  0001 C CNN
+	1    4350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:C-Device C?
+U 1 1 5CCE2826
+P 4800 7050
+AR Path="/5CCE2826" Ref="C?"  Part="1" 
+AR Path="/5C743CDA/5CCE2826" Ref="C?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2826" Ref="C1205"  Part="1" 
+F 0 "C1205" H 4915 7096 50  0000 L CNN
+F 1 "100n" H 4915 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 6900 50  0001 C CNN
+F 3 "~" H 4800 7050 50  0001 C CNN
+	1    4800 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR?
+U 1 1 5CCE282D
+P 4800 6900
+AR Path="/5CCE282D" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE282D" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE282D" Ref="#PWR01218"  Part="1" 
+F 0 "#PWR01218" H 4800 6750 50  0001 C CNN
+F 1 "VCC" H 4817 7073 50  0000 C CNN
+F 2 "" H 4800 6900 50  0001 C CNN
+F 3 "" H 4800 6900 50  0001 C CNN
+	1    4800 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR?
+U 1 1 5CCE2833
+P 4800 7200
+AR Path="/5CCE2833" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE2833" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2833" Ref="#PWR01219"  Part="1" 
+F 0 "#PWR01219" H 4800 6950 50  0001 C CNN
+F 1 "GND" H 4805 7027 50  0000 C CNN
+F 2 "" H 4800 7200 50  0001 C CNN
+F 3 "" H 4800 7200 50  0001 C CNN
+	1    4800 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:C-Device C?
+U 1 1 5CCE2839
+P 5250 7050
+AR Path="/5CCE2839" Ref="C?"  Part="1" 
+AR Path="/5C743CDA/5CCE2839" Ref="C?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2839" Ref="C1206"  Part="1" 
+F 0 "C1206" H 5365 7096 50  0000 L CNN
+F 1 "100n" H 5365 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5288 6900 50  0001 C CNN
+F 3 "~" H 5250 7050 50  0001 C CNN
+	1    5250 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR?
+U 1 1 5CCE2840
+P 5250 6900
+AR Path="/5CCE2840" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE2840" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2840" Ref="#PWR01220"  Part="1" 
+F 0 "#PWR01220" H 5250 6750 50  0001 C CNN
+F 1 "VCC" H 5267 7073 50  0000 C CNN
+F 2 "" H 5250 6900 50  0001 C CNN
+F 3 "" H 5250 6900 50  0001 C CNN
+	1    5250 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR?
+U 1 1 5CCE2846
+P 5250 7200
+AR Path="/5CCE2846" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE2846" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE2846" Ref="#PWR01221"  Part="1" 
+F 0 "#PWR01221" H 5250 6950 50  0001 C CNN
+F 1 "GND" H 5255 7027 50  0000 C CNN
+F 2 "" H 5250 7200 50  0001 C CNN
+F 3 "" H 5250 7200 50  0001 C CNN
+	1    5250 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:C-Device C?
+U 1 1 5CCE7055
+P 5700 7050
+AR Path="/5CCE7055" Ref="C?"  Part="1" 
+AR Path="/5C743CDA/5CCE7055" Ref="C?"  Part="1" 
+AR Path="/5CC23EA1/5CCE7055" Ref="C1207"  Part="1" 
+F 0 "C1207" H 5815 7096 50  0000 L CNN
+F 1 "100n" H 5815 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 6900 50  0001 C CNN
+F 3 "~" H 5700 7050 50  0001 C CNN
+	1    5700 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:VCC-power #PWR?
+U 1 1 5CCE705C
+P 5700 6900
+AR Path="/5CCE705C" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE705C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE705C" Ref="#PWR01222"  Part="1" 
+F 0 "#PWR01222" H 5700 6750 50  0001 C CNN
+F 1 "VCC" H 5717 7073 50  0000 C CNN
+F 2 "" H 5700 6900 50  0001 C CNN
+F 3 "" H 5700 6900 50  0001 C CNN
+	1    5700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:GND-power #PWR?
+U 1 1 5CCE7062
+P 5700 7200
+AR Path="/5CCE7062" Ref="#PWR?"  Part="1" 
+AR Path="/5C743CDA/5CCE7062" Ref="#PWR?"  Part="1" 
+AR Path="/5CC23EA1/5CCE7062" Ref="#PWR01223"  Part="1" 
+F 0 "#PWR01223" H 5700 6950 50  0001 C CNN
+F 1 "GND" H 5705 7027 50  0000 C CNN
+F 2 "" H 5700 7200 50  0001 C CNN
+F 3 "" H 5700 7200 50  0001 C CNN
+	1    5700 7200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2500 1000
+NoConn ~ 2500 1400
+NoConn ~ 2500 1700
+NoConn ~ 2500 2250
+NoConn ~ 2500 2450
+NoConn ~ 2500 2550
+NoConn ~ 2500 2650
+NoConn ~ 2500 2750
+NoConn ~ 2500 3850
+NoConn ~ 2500 3950
+NoConn ~ 2500 4050
+NoConn ~ 2500 4150
+$Comp
+L cisc-8-rescue:74HC04-74xx U1001
+U 4 1 5CF235EF
+P 2050 4550
+F 0 "U1001" H 2300 4650 50  0000 C CNN
+F 1 "74HC04" H 1750 4500 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2050 4550 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2050 4550 50  0001 C CNN
+	4    2050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L cisc-8-rescue:74HC04-74xx U1001
+U 5 1 5CF23695
+P 2050 4950
+F 0 "U1001" H 2300 5050 50  0000 C CNN
+F 1 "74HC04" H 1750 4900 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2050 4950 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2050 4950 50  0001 C CNN
+	5    2050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4350 1550 4350
+Wire Wire Line
+	8700 4350 8700 5100
+Wire Wire Line
+	1550 4350 1550 4550
+Connection ~ 1550 4350
+Wire Wire Line
+	1550 4350 8700 4350
+$Comp
+L cisc-8-rescue:74LS08-74xx U1103
+U 2 1 5CF74F9C
+P 3600 5400
+F 0 "U1103" H 3450 5600 50  0000 L CNN
+F 1 "74HC08" H 3450 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3600 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3600 5400 50  0001 C CNN
+	2    3600 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 5700 3600 5850
+Wire Wire Line
+	3500 5100 3500 3750
+Connection ~ 3500 3750
+Wire Wire Line
+	3500 3750 4000 3750
+$Comp
+L cisc-8-rescue:74LS08-74xx U1103
+U 3 1 5CFA396F
+P 6600 5400
+F 0 "U1103" H 6450 5600 50  0000 L CNN
+F 1 "74HC08" H 6450 5200 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6600 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6600 5400 50  0001 C CNN
+	3    6600 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 5700 6600 5850
+Wire Wire Line
+	6500 5100 6500 3450
+Wire Wire Line
+	2350 4950 5100 4950
+$EndSCHEMATC
