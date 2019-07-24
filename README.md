@@ -1,7 +1,7 @@
 # Cisc-8-ttl-processor
 A cut-down version of the 8080 processor using HCTTL and including a discrete ALU and instruction decoder
 
-This is an attempt to replicate most of the functionality of the 1960s Intel 8080 processor using contemporary
+This is an attempt to replicate most of the functionality of the 1970s Intel 8080 processor using contemporary
 HCTTL surface mount components.
 
 By implementing most - though by no means all - of the instructions of the 8080 it allows the use of existing 
