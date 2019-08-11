@@ -1,4 +1,4 @@
-1503102353390488
+1523298282173488
 Capacitor_SMD
 CP_Elec_3x5.3
 SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics 
@@ -5740,6 +5740,20 @@ MSOP SO
 12
 12
 Package_SO
+MSOP-16-1EP_3x4.039mm_P0.5mm_EP1.651x2.845mm
+MSOP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081667_F_MSE16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+MSOP SO
+0
+21
+17
+Package_SO
+MSOP-16-1EP_3x4.039mm_P0.5mm_EP1.651x2.845mm_ThermalVias
+MSOP, 16 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081667_F_MSE16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+MSOP SO
+0
+28
+17
+Package_SO
 MSOP-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm
 MSOP, 16 Pin (http://cds.linear.com/docs/en/datasheet/37551fd.pdf#page=23), generated with kicad-footprint-generator ipc_gullwing_generator.py
 MSOP SO
@@ -5753,6 +5767,13 @@ MSOP SO
 0
 28
 17
+Package_SO
+MSOP-16_3x4.039mm_P0.5mm
+MSOP, 16 Pin (http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-msop/05081669_A_MS16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+MSOP SO
+0
+16
+16
 Package_SO
 MSOP-16_3x4mm_P0.5mm
 MSOP, 16 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/436412f.pdf#page=22), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -5768,12 +5789,12 @@ micro8
 8
 8
 Package_SO
-PowerIntegrations_eSOP-12B
-eSOP-12B SMT Flat Package with Heatsink Tab, see https://ac-dc.power.com/sites/default/files/product-docs/topswitch-jx_family_datasheet.pdf
-Power Integrations K Package
+PSOP-44_16.9x27.17mm_P1.27mm
+PSOP44: plastic thin shrink small outline package; 44 leads; body width 16.90 mm
+PSOP 1.27
 0
-12
-12
+44
+44
 Package_SO
 PowerIntegrations_SO-8
 Power-Integrations variant of 8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC], see https://ac-dc.power.com/sites/default/files/product-docs/senzero_family_datasheet.pdf
@@ -5796,6 +5817,13 @@ SOIC 1.27
 7
 7
 Package_SO
+PowerIntegrations_eSOP-12B
+eSOP-12B SMT Flat Package with Heatsink Tab, see https://ac-dc.power.com/sites/default/files/product-docs/topswitch-jx_family_datasheet.pdf
+Power Integrations K Package
+0
+12
+12
+Package_SO
 PowerPAK_SO-8_Dual
 PowerPAK SO-8 Dual (https://www.vishay.com/docs/71655/powerpak.pdf, https://www.vishay.com/docs/72600/72600.pdf)
 PowerPAK SO-8 Dual
@@ -5809,13 +5837,6 @@ PowerPAK SO-8 Single
 0
 9
 5
-Package_SO
-PSOP-44_16.9x27.17mm_P1.27mm
-PSOP44: plastic thin shrink small outline package; 44 leads; body width 16.90 mm
-PSOP 1.27
-0
-44
-44
 Package_SO
 QSOP-16_3.9x4.9mm_P0.635mm
 16-Lead Plastic Shrink Small Outline Narrow Body (QR)-.150" Body [QSOP] (see Microchip Packaging Specification 00000049BS.pdf)
@@ -6020,6 +6041,20 @@ SOIC SO
 8
 8
 Package_SO
+SOIC-8_5.275x5.275mm_P1.27mm
+SOIC, 8 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/20005045C.pdf#page=23), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Package_SO
+SOIC-8_7.5x5.85mm_P1.27mm
+SOIC, 8 Pin (http://www.ti.com/lit/ml/mpds382b/mpds382b.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Package_SO
 SOIC-14W_7.5x9mm_P1.27mm
 SOIC, 14 Pin (JEDEC MS-013AF, https://www.analog.com/media/en/package-pcb-resources/package/54614177245586rw_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO
@@ -6139,6 +6174,20 @@ SOP SO
 4
 4
 Package_SO
+SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm
+SOP, 8 Pin (Mini-Circuits XX112 housing; https://ww2.minicircuits.com/case_style/XX112.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOP SO
+0
+13
+9
+Package_SO
+SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias
+SOP, 8 Pin (Mini-Circuits XX112 housing; https://ww2.minicircuits.com/case_style/XX112.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOP SO
+0
+20
+9
+Package_SO
 SOP-8_3.76x4.96mm_P1.27mm
 SOP, 8 Pin (https://ww2.minicircuits.com/case_style/XX211.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOP SO
@@ -6173,6 +6222,13 @@ SOP SO
 0
 18
 18
+Package_SO
+SOP-24_7.5x15.4mm_P1.27mm
+SOP, 24 Pin (http://www.issi.com/WW/pdf/31FL3218.pdf#page=14), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOP SO
+0
+24
+24
 Package_SO
 SSO-4_6.7x5.1mm_P2.54mm_Clearance8mm
 4-Lead Plastic Stretched Small Outline (SSO/Stretched SO), see https://www.vishay.com/docs/84299/vor1142b4.pdf
@@ -6433,55 +6489,6 @@ ST PowerSSO-36 1EP 7.5x10.3mm Pitch 0.8mm
 36
 36
 Package_SO
-Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm
-Texas Instruments HSOP 9, 1.27mm pitch, 3.9x4.9mm body, exposed pad, DDA0008J (http://www.ti.com/lit/ds/symlink/tps5430.pdf)
-HSOP 1.27
-0
-11
-9
-Package_SO
-Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias
-Texas Instruments HSOP 9, 1.27mm pitch, 3.9x4.9mm body, exposed pad, thermal vias, DDA0008J (http://www.ti.com/lit/ds/symlink/tps5430.pdf)
-HSOP 1.27
-0
-20
-9
-Package_SO
-Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias
-8-pin HTSOP package with 1.27mm pin pitch, compatible with SOIC-8, 3.9x4.9mm body, exposed pad, thermal vias, http://www.ti.com/lit/ds/symlink/drv8870.pdf
-HTSOP 1.27
-0
-18
-9
-Package_SO
-Texas_PWP0020A
-20-Pin Thermally Enhanced Thin Shrink Small-Outline Package, Body 4.4x6.5x1.1mm, Pad 3.0x4.2mm, Texas Instruments (see http://www.ti.com/lit/ds/symlink/lm5118.pdf)
-PWP HTSSOP 0.65mm
-0
-25
-21
-Package_SO
-Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm
-HSOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lmr14030.pdf#page=28, http://www.ti.com/lit/ml/msoi002j/msoi002j.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
-HSOIC SO
-0
-16
-9
-Package_SO
-Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias
-HSOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lmr14030.pdf#page=28, http://www.ti.com/lit/ml/msoi002j/msoi002j.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
-HSOIC SO
-0
-23
-9
-Package_SO
-Texas_R-PDSO-N5
-Plastic Small outline http://www.ti.com/lit/ml/mpds158c/mpds158c.pdf
-SOT23 R-PDSO-N5
-0
-5
-5
-Package_SO
 TI_SO-PowerPAD-8
 8-Lead Plastic PSOP, Exposed Die Pad (TI DDA0008B, see http://www.ti.com/lit/ds/symlink/lm3404.pdf)
 SSOP 0.50 exposed pad
@@ -6699,16 +6706,51 @@ SSOP 0.5
 56
 56
 Package_SO
-Vishay_PowerPAK_1212-8_Dual
-PowerPAK 1212-8 Dual (https://www.vishay.com/docs/71656/ppak12128.pdf, https://www.vishay.com/docs/72598/72598.pdf)
-Vishay_PowerPAK_1212-8_Dual
+Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm
+Texas Instruments HSOP 9, 1.27mm pitch, 3.9x4.9mm body, exposed pad, DDA0008J (http://www.ti.com/lit/ds/symlink/tps5430.pdf)
+HSOP 1.27
 0
-6
-6
+11
+9
 Package_SO
-Vishay_PowerPAK_1212-8_Single
-PowerPAK 1212-8 Single (https://www.vishay.com/docs/71656/ppak12128.pdf, https://www.vishay.com/docs/72597/72597.pdf)
-Vishay PowerPAK 1212-8 Single
+Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias
+Texas Instruments HSOP 9, 1.27mm pitch, 3.9x4.9mm body, exposed pad, thermal vias, DDA0008J (http://www.ti.com/lit/ds/symlink/tps5430.pdf)
+HSOP 1.27
+0
+20
+9
+Package_SO
+Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias
+8-pin HTSOP package with 1.27mm pin pitch, compatible with SOIC-8, 3.9x4.9mm body, exposed pad, thermal vias, http://www.ti.com/lit/ds/symlink/drv8870.pdf
+HTSOP 1.27
+0
+18
+9
+Package_SO
+Texas_PWP0020A
+20-Pin Thermally Enhanced Thin Shrink Small-Outline Package, Body 4.4x6.5x1.1mm, Pad 3.0x4.2mm, Texas Instruments (see http://www.ti.com/lit/ds/symlink/lm5118.pdf)
+PWP HTSSOP 0.65mm
+0
+25
+21
+Package_SO
+Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm
+HSOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lmr14030.pdf#page=28, http://www.ti.com/lit/ml/msoi002j/msoi002j.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HSOIC SO
+0
+16
+9
+Package_SO
+Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias
+HSOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lmr14030.pdf#page=28, http://www.ti.com/lit/ml/msoi002j/msoi002j.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HSOIC SO
+0
+23
+9
+Package_SO
+Texas_R-PDSO-N5
+Plastic Small outline http://www.ti.com/lit/ml/mpds158c/mpds158c.pdf
+SOT23 R-PDSO-N5
 0
 5
 5
@@ -6754,6 +6796,20 @@ VSSOP SO
 0
 10
 10
+Package_SO
+Vishay_PowerPAK_1212-8_Dual
+PowerPAK 1212-8 Dual (https://www.vishay.com/docs/71656/ppak12128.pdf, https://www.vishay.com/docs/72598/72598.pdf)
+Vishay_PowerPAK_1212-8_Dual
+0
+6
+6
+Package_SO
+Vishay_PowerPAK_1212-8_Single
+PowerPAK 1212-8 Single (https://www.vishay.com/docs/71656/ppak12128.pdf, https://www.vishay.com/docs/72597/72597.pdf)
+Vishay PowerPAK 1212-8 Single
+0
+5
+5
 Package_SO
 Zetex_SM8
 Zetex,  SMD, 8 pin package (http://datasheet.octopart.com/ZDT6758TA-Zetex-datasheet-68057.pdf)
